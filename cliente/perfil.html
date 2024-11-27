@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Mi perfil</title>
+    <link rel="icon" href="img/Icono.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+    <div class="navar w3-bar w3-padding-24">
+        <span class="qlementine-icons--user-16"></span>
+        <div class="user-info">
+            <h1 id="nombre" >Hola </h1>
+            <p id="correo">hola@sitioincreible.com</p>
+        </div>
+        <div class="button-container">
+          <a href="quiosko.html">
+            <span class="lets-icons--home-duotone"></span>
+          </a>
+            <input type="submit" value="Eliminar cuenta" class="button" onclick="showDeleteForm()">
+            <a href="php/cerrar.php">
+              <span class="mi--log-out"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card-info">
+          <h2>Datos de la tarjeta</h2>
+          <form class="card-form">
+            <label for="card-number">Número de tarjeta: </label>
+            <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000">
+            <br>
+            <label for="card-holder">Titular: </label>
+            <input type="text" id="card-holder" name="card-holder" placeholder="Nombre del titular">
+            <br>
+            <label for="card-cvv">CVV:</label>
+            <input type="text" id="card-cvv" name="card-cvv" placeholder="XXXX">
+            <br>
+            <label for="card-expiry">Fecha de expiración:</label>
+            <input type="text" id="card-expiry" name="card-expiry" placeholder="XX/XX">
+            </div>
+        <div class="card-image">
+          <img src="img/tarj.png" alt="Imagen de tarjeta">
+        </div>
+    </div>
+
+    <div class="subscription-container">
+        <h2>SUSCRIPCIÓN</h2>
+        <table>
+          <tr>
+            <td>
+              <p id="fechaInicio">Fecha de Inicio:</p>
+            </td>
+            <td>
+              <p  id="fechaFin">Fecha de Fin:</p>
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Renovar suscripción" id="Renovar" class="button">
+      </div>
+
+      <div id="delete-form" class="w3-modal" style="display: none;">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity" style="max-width: 400px;">
+            <header class="w3-container w3-red">
+                <h3>Confirmar eliminación :</h3>
+                <span onclick="closeDeleteForm()" class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container">
+              <br>
+                <p>Ingresa tu contraseña para eliminar la cuenta:</p>
+                <br>
+                <form>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="passE" name="password" class="w3-input w3-border">
+                    <br>
+                    <button type="submit" id="Eliminar" class="w3-button w3-red w3-margin-bottom">Eliminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/alertas.js"></script>
+        <script src="js/eliminar.js"></script>
+        <script src="js/informacion.js"></script>
+        <script src="js/actualizar.js"></script>
+        <script src="../sseSuscripcion.js"></script>
+</body>
+</html>

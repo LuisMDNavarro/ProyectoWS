@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Quiosko digital</title>
+    <link rel="icon" href="img/Icono.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/styleprin.css">
+</head>
+<body>
+    <div class="navar w3-bar w3-padding-24">
+        <span class="material-symbols-light--book-ribbon-outline-rounded"></span>
+        <div class="logo">
+            <h1>QUIOSCO DIGITAL</h1>
+        </div>
+        <div class="search">
+            <input type="text" id="isbn" placeholder="ISBN del producto...">
+            <button id="buscar">🔍</button>
+        </div>
+        <div class="user-icon">
+            <a href="perfil.html">
+                <span class="qlementine-icons--user-16"></span>
+            </a>
+            <a href="php/cerrar.php">
+                <span class="mi--log-out"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="filter-container">
+        <div class="filter">
+            <select id="categoria">
+                <option value="0" selected>Categoria ...</option>
+                <option value="revistas">Revistas</option>
+                <option value="mangas">Mangas</option>
+                <option value="comics">Comics</option>
+                <option value="libros">Libros</option>
+            </select>
+        </div>
+        <input type="submit" value="Flitrar"  id="filtros" class="button">
+    </div>
+
+    <div id="contenido">
+    </div>
+
+    <footer>
+        <p>Servicios Web Quiosco Digital</p>
+    </footer>
+    <script src="js/contenido.js"></script>
+    <script src="../sseContenido.js"></script>
+    <script src="../sseSuscripcion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

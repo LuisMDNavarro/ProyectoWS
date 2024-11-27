@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiosko digital</title>
+    <link rel="icon" href="img/Icono.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login"><span class="material-symbols-light--book-ribbon-outline-sharp"></span>
+            Iniciar sesión</div>
+          <div class="title signup"><span class="material-symbols-light--book-ribbon-outline-sharp"></span>
+            Suscribete</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Suscribirse</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="email"  id="correo" placeholder="Correo" required>
+              </div>
+              <div class="field">
+                <input type="password" id="pass" placeholder="Contraseña" required>
+              </div>
+             
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" id="Ingresar" value="Ingresar">
+              </div>
+              <div class="signup-link">¿Aún no eres miembro? <a href="">Suscribete</a></div>
+            </form>
+            <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                  </div>
+              <div class="field">
+                <input type="email" id="correoR" placeholder="Correo" required>
+              </div>
+              <div class="field">
+                <input type="password" id="passR" placeholder="Contraseña" required>
+              </div>
+
+            <hr>
+
+              <div class="field">
+                <input type="text" id="numTarjeta" placeholder="Número de tarjeta" required>
+              </div>
+              <div class="field">
+                <input type="text" id="titular" placeholder="Titular" required>
+              </div>
+
+                <table>
+                      <tr>
+                        <td> 
+                            <div class="field2">
+                            <input type="text" id="cvv" maxlength="3" placeholder="CVV" required>
+                          </div>
+                        </td>
+                        <td>              
+                            <div class="field2">
+                            <input type="text" id="fechaExp" placeholder="Fecha Exp" required>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" id="Registrar" value="Registrar">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="js/forms.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="js/alertas.js"></script>
+      <script src="js/registrar.js"></script>
+      <script src="js/login.js"></script>
+      <script src="../sse.js"></script>
+</body>
+</html>
