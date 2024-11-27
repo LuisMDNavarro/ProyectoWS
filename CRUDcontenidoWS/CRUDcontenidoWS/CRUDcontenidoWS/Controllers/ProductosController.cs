@@ -304,7 +304,7 @@ namespace CRUDcontenidoWS.Controllers
             if (user == "") { user = "---"; }
             Respuesta RespuestaCheckSub = new Respuesta();
             RespuestaCheckSub.Data = "";
-            RespuestaCheckSub.Status = "fail";
+            RespuestaCheckSub.Status = "error";
             IFirebaseClient client = new FireSharp.FirebaseClient(config);
 
             if (client != null)

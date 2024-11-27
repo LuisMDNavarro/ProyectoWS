@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const newUpdate = document.createElement("p");
         newUpdate.textContent = `Suscripción Vigente`;
         Swal.fire({
-            title: `¡Tu suscripción sigue vigente!`,
-            text: `Sigue disfrutando del contenido`,
-            icon: "success",
+            title: "Estado de tu suscripción",
+            text:  `${data.Message}`,
+            icon: `${data.Status}`,
             confirmButtonColor: "#3085d6",
             confirmButtonText: "Aceptar",
         });
